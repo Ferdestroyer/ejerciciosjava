@@ -7,8 +7,8 @@ public class Ejercicio8 {
 		float importe=0;
 		float importedescuento=0;
 		
-		if mes=="Octubre"
-				asd
+		if (mes=="Octubre"){}
+				
 		
 		
 
