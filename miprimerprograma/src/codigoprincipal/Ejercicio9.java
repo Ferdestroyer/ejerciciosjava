@@ -12,8 +12,8 @@ public class Ejercicio9 {
 		Scanner numero = new Scanner(System.in); //nos guarda lo que escribamos por teclado
 
 	       numero1=numero.nextInt(); //decimos que el numero 1 sea = a lo que ponemos por teclado
-		
-
+	       System.out.println ("estoy desde casa");	
+	       
 	}
 
 }
