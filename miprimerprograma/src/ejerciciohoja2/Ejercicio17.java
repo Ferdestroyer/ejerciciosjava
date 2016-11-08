@@ -2,7 +2,7 @@ package ejerciciohoja2;
 
 import java.util.Scanner;
 
-public class Ejercicio15 {
+public class Ejercicio17 {
 
 	public static void main(String[] args) {
 		
@@ -21,33 +21,26 @@ public class Ejercicio15 {
 		System.out.println("introduce el segundo numero");
 		numero2=teclado.nextInt();
 		
-		//filtro para poder hacer el for bien
-		if (numero1>numero2){
-			numeroaux=numero2;
-			numero2=numero1;
-			numero1=numeroaux;
-		}
-			
+		
+		if(numero2>=numero1){
 		
 		
-		for (int i=numero1; i<=numero2; i++){
+			for (int i=numero1; i<=numero2; i++){
 			
-			if (i>=0){
-			cont=cont+1;
-			System.out.printf("%3d \n", i);
+			
+				if (i%2==0){
+				cont=cont+1;
+				cont1=cont1+i;
+				System.out.printf("%3d \n", i);
+				}
 			
 			}
-			
-			if (i%2==0 && i>=0){
-				cont1=cont1+1;
-				
-			}
-			
 		}
+			
+			
+		System.out.println(cont+" numeros multiplos de 2");
+		System.out.println(cont1+" suma de multiplos de 2");
 		
-		System.out.println(cont+" numeros naturales");
-		System.out.println(cont1+" numeros pares");
-
 	}
 
 }
