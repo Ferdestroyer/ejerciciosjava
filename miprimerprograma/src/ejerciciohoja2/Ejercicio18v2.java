@@ -2,10 +2,9 @@ package ejerciciohoja2;
 
 import java.util.Scanner;
 
-public class Ejercicio18 {
+public class Ejercicio18v2 {
 
 	public static void main(String[] args) {
-		
 		String frase;
 		String letra;
 		int cont;
@@ -18,7 +17,7 @@ public class Ejercicio18 {
 		System.out.println("introduce la letra");
 		letra=teclado.next();
 		
-		//bucle para contar una letra de un string, con metodo fuerza bruta
+		//bucle para contar una letra de un string
 		
 		for (int i=0; i<frase.length();i++){
 			if (frase.charAt(i) == letra.charAt(0)){
