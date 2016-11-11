@@ -6,8 +6,8 @@ public class Ejercicio20 {
 
 	public static void main(String[] args) {
 		
-		double numero=0;
-		double factorial=1;
+		long numero=0;
+		long factorial=1;
 		
 		Scanner teclado = new Scanner(System.in);
 
