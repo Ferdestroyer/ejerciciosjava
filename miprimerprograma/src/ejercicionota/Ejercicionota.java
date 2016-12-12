@@ -93,8 +93,8 @@ public class Ejercicionota {
 				String dia1=valor1.substring(0, 2);
 				String mes1=valor1.substring(3, 5);
 				String ano1=valor1.substring(6);
-				String dia2=valor2.substring(0, 2);
-				String mes2=valor2.substring(3, 5);
+				String dia2=valor2.substring(0, 1);
+				String mes2=valor2.substring(4, 5);
 				String ano2=valor2.substring(6);			
 			}//else if 4
 			
@@ -103,8 +103,8 @@ public class Ejercicionota {
 			//VALOR 1, caracteres especiales en posiciones 2 y 4 y VALOR2 con todas sus combinaciones
 			
 			else if((pos1a==2 && pos1a1==4) || (pos2a==2 && pos2a1==4) || (pos3a==2 && pos3a1==4) || (pos4a==2 && pos4a1==4) && (pos1b==2 && pos1b1==4) || (pos2b==2 && pos2b1==4) || (pos3b==2 && pos3b1==4) || (pos4b==2 && pos4b1==4)){
-				String dia1=valor1.substring(0, 2);
-				String mes1=valor1.substring(3, 4);
+				String dia1=valor1.substring(0, 1);
+				String mes1=valor1.substring(2, 4);
 				String ano1=valor1.substring(5);
 				String dia2=valor2.substring(0, 2);
 				String mes2=valor2.substring(3, 4);
@@ -254,6 +254,9 @@ public class Ejercicionota {
 			}//else
 			
 		}//if main
+		else{
+			System.out.println("error");
+		}//else
 	}//main
 
 }//class
