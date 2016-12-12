@@ -11,6 +11,20 @@ import java.util.Scanner;
 //•	Si son dos fechas, el programa calculará y escribirá la diferencia en días entre la fecha mayor y la menor.
 //•	Si es una fecha y un número, calculará la nueva fecha tras añadir el número introducido a la fecha (será una fecha anterior si el número es negativo o posterior si es positivo). Además dirá el día de la semana que es. 
 //*****************************************************************************************************************************************************************************************************************************
+
+//puntos del ejercicio terminados:
+//•	La fecha podrá venir en formato AAAAMMDD ó DDMMAAAA con alguno de los siguientes 4 separadores -./: entre el día, el mes y el año, siempre será el mismo en cada fecha que se introduzca. (9 horas)
+//•	Lea de teclado dos cadenas (String). El contenido pueden ser dos fechas (1 hora)
+
+//lo que está a mitad:
+//leer los substring para sacar el dia, mes y año
+
+//lo que falta:
+//• una fecha y un número entero.
+//•	Se deben tener en cuenta todas las validaciones de fechas. 
+//•	Si son dos fechas, el programa calculará y escribirá la diferencia en días entre la fecha mayor y la menor.
+//•	Si es una fecha y un número, calculará la nueva fecha tras añadir el número introducido a la fecha (será una fecha anterior si el número es negativo o posterior si es positivo). Además dirá el día de la semana que es. 
+
 public class Ejercicionota {
 
 	public static void main(String[] args) {
@@ -62,17 +76,17 @@ public class Ejercicionota {
 				String mes1=valor1.substring(3, 5);
 				String ano1=valor1.substring(6);
 				String dia2=valor2.substring(0, 2);
-				String mes2=valor2.substring(3, 5);
-				String ano2=valor2.substring(6);
+				String mes2=valor2.substring(3, 4);
+				String ano2=valor2.substring(5);
 			}//else if 2
 			//posibilidad3
 			else if((pos1a==2 && pos1a1==5) || (pos2a==2 && pos2a1==5) || (pos3a==2 && pos3a1==5) || (pos4a==2 && pos4a1==5) && (pos1b==1 && pos1b1==4) || (pos2b==1 && pos2b1==4) || (pos3b==1 && pos3b1==4) || (pos4b==1 && pos4b1==4)){
 				String dia1=valor1.substring(0, 2);
 				String mes1=valor1.substring(3, 5);
 				String ano1=valor1.substring(6);
-				String dia2=valor2.substring(0, 2);
-				String mes2=valor2.substring(3, 5);
-				String ano2=valor2.substring(6);
+				String dia2=valor2.substring(0, 1);
+				String mes2=valor2.substring(2, 4);
+				String ano2=valor2.substring(5);
 			}//else if 3
 			//posibilidad4
 			else if((pos1a==2 && pos1a1==5) || (pos2a==2 && pos2a1==5) || (pos3a==2 && pos3a1==5) || (pos4a==2 && pos4a1==5) && (pos1b==1 && pos1b1==3) ||  (pos2b==1 && pos2b1==3) ||  (pos3b==1 && pos3b1==3) ||  (pos4b==1 && pos4b1==3)){
