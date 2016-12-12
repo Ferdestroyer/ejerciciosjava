@@ -43,30 +43,198 @@ public class Ejercicionota {
 			int pos3b1=valor2.indexOf('/', pos3b+1); //buscar el siguiente valor "/" partiendo de pos3b+1 de la cadena 2 y guardar la posicion en pos3b1
 			int pos4b1=valor2.indexOf(':', pos4b+1); //buscar el siguiente valor ":" partiendo de pos4b+1 de la cadena 2 y guardar la posicion en pos4b1
 			
-			//Condición con operadores lógicos que se encarga de analizar la condición 2 (DDMMAAAA) del ejercicio
+			//Condiciones con operadores lógicos que se encarga de analizar la condición 2 (DDMMAAAA) del ejercicio
 			
+			//VALOR 1, caracteres especiales en posiciones 2 y 5 y VALOR2 con todas sus combinaciones
 			
+			//posibilidad1
 			if((pos1a==2 && pos1a1==5) || (pos2a==2 && pos2a1==5) || (pos3a==2 && pos3a1==5) || (pos4a==2 && pos4a1==5) && (pos1b==2 && pos1b1==5) || (pos2b==2 && pos2b1==5) || (pos3b==2 && pos3b1==5) || (pos4b==2 && pos4b1==5)){
-				System.out.println("exito");
-				
-			}//if 2
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//
+			//posibilidad2
+			else if((pos1a==2 && pos1a1==5) || (pos2a==2 && pos2a1==5) || (pos3a==2 && pos3a1==5) || (pos4a==2 && pos4a1==5) && (pos1b==2 && pos1b1==4) || (pos2b==2 && pos2b1==4) || (pos3b==2 && pos3b1==4) || (pos4b==2 && pos4b1==4)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 2
+			//posibilidad3
+			else if((pos1a==2 && pos1a1==5) || (pos2a==2 && pos2a1==5) || (pos3a==2 && pos3a1==5) || (pos4a==2 && pos4a1==5) && (pos1b==1 && pos1b1==4) || (pos2b==1 && pos2b1==4) || (pos3b==1 && pos3b1==4) || (pos4b==1 && pos4b1==4)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 3
+			//posibilidad4
+			else if((pos1a==2 && pos1a1==5) || (pos2a==2 && pos2a1==5) || (pos3a==2 && pos3a1==5) || (pos4a==2 && pos4a1==5) && (pos1b==1 && pos1b1==3) ||  (pos2b==1 && pos2b1==3) ||  (pos3b==1 && pos3b1==3) ||  (pos4b==1 && pos4b1==3)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);			
+			}//else if 4
+			
+			//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			
+			//VALOR 1, caracteres especiales en posiciones 2 y 4 y VALOR2 con todas sus combinaciones
+			
 			else if((pos1a==2 && pos1a1==4) || (pos2a==2 && pos2a1==4) || (pos3a==2 && pos3a1==4) || (pos4a==2 && pos4a1==4) && (pos1b==2 && pos1b1==4) || (pos2b==2 && pos2b1==4) || (pos3b==2 && pos3b1==4) || (pos4b==2 && pos4b1==4)){
-				System.out.println("exito");
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 4);
+				String ano1=valor1.substring(5);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 4);
+				String ano2=valor2.substring(5);
 			}//else if1
+			else if((pos1a==2 && pos1a1==4) || (pos2a==2 && pos2a1==4) || (pos3a==2 && pos3a1==4) || (pos4a==2 && pos4a1==4) && (pos1b==2 && pos1b1==5) || (pos2b==2 && pos2b1==5) || (pos3b==2 && pos3b1==5) || (pos4b==2 && pos4b1==5)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 2
+			//posibilidad3
+			else if((pos1a==2 && pos1a1==4) || (pos2a==2 && pos2a1==4) || (pos3a==2 && pos3a1==4) || (pos4a==2 && pos4a1==4) && (pos1b==1 && pos1b1==4) || (pos2b==1 && pos2b1==4) || (pos3b==1 && pos3b1==4) || (pos4b==1 && pos4b1==4)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 3
+			//posibilidad4
+			else if((pos1a==2 && pos1a1==4) || (pos2a==2 && pos2a1==4) || (pos3a==2 && pos3a1==4) || (pos4a==2 && pos4a1==4) && (pos1b==1 && pos1b1==3) ||  (pos2b==1 && pos2b1==3) ||  (pos3b==1 && pos3b1==3) ||  (pos4b==1 && pos4b1==3)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);			
+			}//else if 4
+			
+			//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			
+			//VALOR 1, caracteres especiales en posiciones 1 y 4 y VALOR2 con todas sus combinaciones
 			
 			else if((pos1a==1 && pos1a1==4) || (pos2a==1 && pos2a1==4) || (pos3a==1 && pos3a1==4) || (pos4a==1 && pos4a1==4) && (pos1b==1 && pos1b1==4) || (pos2b==1 && pos2b1==4) || (pos3b==1 && pos3b1==4) || (pos4b==1 && pos4b1==4)){
-				System.out.println("exito");
-			}//else if2
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if1
+			else if((pos1a==1 && pos1a1==4) || (pos2a==1 && pos2a1==4) || (pos3a==1 && pos3a1==4) || (pos4a==1 && pos4a1==4) && (pos1b==2 && pos1b1==5) || (pos2b==2 && pos2b1==5) || (pos3b==2 && pos3b1==5) || (pos4b==2 && pos4b1==5)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 2
+			//posibilidad3
+			else if((pos1a==1 && pos1a1==4) || (pos2a==1 && pos2a1==4) || (pos3a==1 && pos3a1==4) || (pos4a==1 && pos4a1==4) && (pos1b==2 && pos1b1==4) || (pos2b==2 && pos2b1==4) || (pos3b==2 && pos3b1==4) || (pos4b==2 && pos4b1==4)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 3
+			//posibilidad4
+			else if((pos1a==1 && pos1a1==4) || (pos2a==1 && pos2a1==4) || (pos3a==1 && pos3a1==4) || (pos4a==1 && pos4a1==4) && (pos1b==1 && pos1b1==3) ||  (pos2b==1 && pos2b1==3) ||  (pos3b==1 && pos3b1==3) ||  (pos4b==1 && pos4b1==3)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);			
+			}//else if 4
+			
+			//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			
+			//VALOR 1, caracteres especiales en posiciones 1 y 3 y VALOR2 con todas sus combinaciones
 			
 			else if((pos1a==1 && pos1a1==3) ||  (pos2a==1 && pos2a1==3) ||  (pos3a==1 && pos3a1==3) ||  (pos4a==1 && pos4a1==3) && (pos1b==1 && pos1b1==3) ||  (pos2b==1 && pos2b1==3) ||  (pos3b==1 && pos3b1==3) ||  (pos4b==1 && pos4b1==3)){
-				System.out.println("exito");
-			}//else if3
-			//Condición con operadores lógicos que se encarga de analizar la condición 2 (AAAAMMDD) del ejercicio
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);	
+			}//else if1
+			else if((pos1a==1 && pos1a1==3) ||  (pos2a==1 && pos2a1==3) ||  (pos3a==1 && pos3a1==3) ||  (pos4a==1 && pos4a1==3) && (pos1b==2 && pos1b1==5) || (pos2b==2 && pos2b1==5) || (pos3b==2 && pos3b1==5) || (pos4b==2 && pos4b1==5)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 2
+			//posibilidad3
+			else if((pos1a==1 && pos1a1==3) ||  (pos2a==1 && pos2a1==3) ||  (pos3a==1 && pos3a1==3) ||  (pos4a==1 && pos4a1==3) && (pos1b==2 && pos1b1==4) || (pos2b==2 && pos2b1==4) || (pos3b==2 && pos3b1==4) || (pos4b==2 && pos4b1==4)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);
+			}//else if 3
+			//posibilidad4
+			else if((pos1a==1 && pos1a1==3) ||  (pos2a==1 && pos2a1==3) ||  (pos3a==1 && pos3a1==3) ||  (pos4a==1 && pos4a1==3) && (pos1b==1 && pos1b1==4) || (pos2b==1 && pos2b1==4) || (pos3b==1 && pos3b1==4) || (pos4b==1 && pos4b1==4)){
+				String dia1=valor1.substring(0, 2);
+				String mes1=valor1.substring(3, 5);
+				String ano1=valor1.substring(6);
+				String dia2=valor2.substring(0, 2);
+				String mes2=valor2.substring(3, 5);
+				String ano2=valor2.substring(6);			
+			}//else if 4
 			
-			else if(((pos1a==4 && pos1a1==6) || (pos1a==4 && pos1a1==7) || (pos2a==4 && pos2a1==6) || (pos2a==4 && pos2a1==7) || (pos3a==4 && pos3a1==6) || (pos3a==4 && pos3a1==7) || (pos4a==4 && pos4a1==6) || (pos4a==4 && pos4a1==7)) && ((pos1b==4 && pos1b1==6) || (pos1b==4 && pos1b1==7) || (pos2b==4 && pos2b1==6) || (pos2b==4 && pos2b1==7) || (pos3b==4 && pos3b1==6) || (pos3b==4 && pos3b1==7) || (pos4b==4 && pos4b1==6) || (pos4b==4 && pos4b1==7))){
+			//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			
+			
+			//Condiciones con operadores lógicos que se encarga de analizar la condición 2 (AAAAMMDD) del ejercicio
+			
+			//VALOR 1, caracteres especiales en posiciones 4 y 6 y VALOR2 con todas sus combinaciones
+			
+			else if(((pos1a==4 && pos1a1==6) || (pos2a==4 && pos2a1==6) || (pos3a==4 && pos3a1==6) || (pos4a==4 && pos4a1==6)) && ((pos1b==4 && pos1b1==6) || (pos2b==4 && pos2b1==6) || (pos3b==4 && pos3b1==6) || (pos4b==4 && pos4b1==6))){
+				
+				System.out.println("bien");
+			}//else if1
+			
+			else if(((pos1a==4 && pos1a1==6) || (pos2a==4 && pos2a1==6) || (pos3a==4 && pos3a1==6) || (pos4a==4 && pos4a1==6)) && ((pos1b==4 && pos1b1==7) || (pos2b==4 && pos2b1==7) || (pos3b==4 && pos3b1==7) || (pos4b==4 && pos4b1==7))){
 				
 				System.out.println("bien");
 			}//else if2
+			
+			//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			
+			//VALOR 1, caracteres especiales en posiciones 4 y 7 y VALOR2 con todas sus combinaciones
+			
+			else if(((pos1a==4 && pos1a1==7) || (pos2a==4 && pos2a1==7) || (pos3a==4 && pos3a1==7) || (pos4a==4 && pos4a1==7)) && ((pos1b==4 && pos1b1==7) || (pos2b==4 && pos2b1==7) || (pos3b==4 && pos3b1==7) || (pos4b==4 && pos4b1==7))){
+				
+				System.out.println("bien");
+			}//else if1
+			
+			else if(((pos1a==4 && pos1a1==7) || (pos2a==4 && pos2a1==7) || (pos3a==4 && pos3a1==7) || (pos4a==4 && pos4a1==7)) && ((pos1b==4 && pos1b1==6) || (pos2b==4 && pos2b1==6) || (pos3b==4 && pos3b1==6) || (pos4b==4 && pos4b1==6))){
+				
+				System.out.println("bien");
+			}//else if2
+			
+			//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+			//FIN POSBILIDADES
+			
 			else{
 				System.out.println("error");
 			}//else
