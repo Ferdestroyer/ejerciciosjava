@@ -21,7 +21,7 @@ public class Ejercicio12 {
 				System.out.println(cont1+" suma de pares");
 				System.out.println(cont2+" suma de impares");
 			}
-			
+
 
 		}
 
