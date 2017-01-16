@@ -2,22 +2,27 @@ package fecha;
 
 import java.util.Scanner;
 
+import comparadordefechasmodular.Validar;
+
 public class main {
 
 	public static void main(String[] args) {
 
-		fecha fecha1;
-		int dia, mes, anyo;
-		do{
 		Scanner teclado = new Scanner(System.in);
-		System.out.println(" escribe el año");
-		anyo=teclado.nextInt();
-		System.out.println(" escribe el mes ");
-		mes=teclado.nextInt();
-		System.out.println(" escribe el dia ");
-		dia=teclado.nextInt();
-		fecha1=new fecha(anyo, mes, dia);
-		}while(fecha1.getAnyo()==1 && fecha1.getMes()==1 && fecha1.getDia()==1);
+		Validar Validar1=new Validar();
+		int anio, mes, dia, anio2, mes2, dia2;
+		System.out.print("Introduce el año desde: ");
+		anio = teclado.nextInt();
+		System.out.print("Introduce el mes desde: ");
+		mes = teclado.nextInt();
+		System.out.print("Introduce el día desde: ");
+		dia = teclado.nextInt();
+		System.out.print("Introduce el año hasta: ");
+		anio2 = teclado.nextInt();
+		System.out.print("Introduce el mes hasta: ");
+		mes2 = teclado.nextInt();
+		System.out.print("Introduce el día hasta: ");
+		dia2 = teclado.nextInt();
 	}
 
 }

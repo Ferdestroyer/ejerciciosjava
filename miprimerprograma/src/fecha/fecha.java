@@ -72,7 +72,7 @@ public class fecha {
             }*/
             if (anio2>anio){//fechas en años distintos
 
-				for (i=anio+1 ; i<anio2 ; i++){//suma de a�os
+				for (i=anio+1 ; i<anio2 ; i++){//suma de años
 					total = total + 365;
 					if ((i%4==0 && i%100!=0) || i%400==0)	total = total + 1;
 				}
