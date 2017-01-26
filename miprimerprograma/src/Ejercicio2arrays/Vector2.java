@@ -15,9 +15,11 @@ public class Vector2 {
 	public  Vector2(int mo, int m){
 		v1=new int [mo];
 		v2=new int [mo];
+		v3=new int [mo];
 		for (int i=0; i<mo; i++) {
 			v1[i]=m;
 			v2[i]=m;
+			v3[i]=m;
 		}
 
 
@@ -27,14 +29,30 @@ public class Vector2 {
 		
 		v1=new int [mo];
 		v2=new int [mo];
-		v3=new int [mo*2];
+		v3=new int [mo];
 		for (int i=0; i<mo; i++) {
 			v1[i]=(int) (Math.random()*(hasta-desde+1)+desde);
 			v2[i]=(int) (Math.random()*(hasta-desde+1)+desde);
 		}
-		v3[mo*2]=v1[mo]+v2[mo];
+	}
+
+	public void Sumar(){
+		for(int i=0; i<v3.length; i++){
+			v3[i]=v1[i]+v2[i];
+		}
+		
 	}
 	
+	public void Ordenar(){
+		for(int i=0; i<v3.length; i++){
+			for (int j=0; j<v3.length; j++){
+				if (v3[j]>v3[j+1]){
+					int aux=v3[j+1]
+				}
+			}
+		}
+		
+	}
 
 	public void imprime1Vector(){
 		System.out.println("Array 1");
@@ -52,8 +70,8 @@ public class Vector2 {
 	}
 	public void imprime3Vector(){
 		System.out.println("Array 3 (Suma de los arrays 1 y 2 con los numeros ordenados)");
-		for(int l=0; l<v3.length; l++){
-			System.out.print(v3[l]+" * ");
+		for(int m=0; m<v3.length; m++){
+			System.out.print(v3[m]+" * ");
 		}
 		System.out.println();
 	}

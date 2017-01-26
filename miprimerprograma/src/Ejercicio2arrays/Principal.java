@@ -23,9 +23,15 @@ public class Principal {
 		hasta=teclado.nextInt();
 		vector=new Vector2(mo,desde,hasta);
 		System.out.println("Valores generados en los Arrays:");
+		System.out.println();
 		vector.imprime1Vector();
 		vector.imprime2Vector();
+		System.out.println();
+		System.out.println("Suma de los valores sin ordenar");
+		vector.Sumar();
 		vector.imprime3Vector();
+		System.out.println();
+		System.out.println("Suma de los valores ordenado");
 		
 		
 		
