@@ -1,4 +1,4 @@
-package Ejercicio2arrays;
+package Ejercicio3arrays;
 
 public class Vector {
 	
@@ -25,38 +25,24 @@ public class Vector {
 			v[i]=(int) (Math.random()*(hasta-desde+1)+desde);
 		}
 	}
-	public Vector suma2vectores(Vector OtroVector){
-		Vector sumar=null;
-		//
-		//return sumar;
-		if(v.length==OtroVector.v.length){
-			sumar=new Vector(v.length);
-			for(int i=0; i<v.length; i++){
-				sumar.v[i]=v[i]+OtroVector.v[i];
-			}
-			
-		}
-		return sumar;
-		
-	}
-
 	
-	public void Ordenar(){
-			for(int i=0;i<(v.length-1);i++){
-				for(int j=i+1;j<v.length;j++){
-					if(v[i]>v[j]){
-					//Intercambiamos valores
-						int variableauxiliar=v[i];
-						v[i]=v[j];
-						v[j]=variableauxiliar;
 
+	public void busqueda(){
+		for(int i=0;i<(v.length-1);i++){
+			for(int j=i+1;j<v.length;j++){
+				if(v[i]>v[j]){
+				//Intercambiamos valores
+					int variableauxiliar=v[i];
+					System.out.print(variableauxiliar);
+			}
+				else if(v[i]<v[j]){
+					int variableauxiliar1=v[i];
+					System.out.print(variableauxiliar1);
 				}
-			}
+				
 		}
 	}
-	
-
-	
+}
 	
 	
 	public void imprimeVector(){
