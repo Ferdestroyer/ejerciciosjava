@@ -8,7 +8,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		int mo, desde, hasta;
-		Vector2 vector;
+		Vector v1, v2, v3;
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("DOBLE ARRAY MAGICO DE NUMEROS CON LA SUMA DE UN TERCERO");
 		System.out.println();
@@ -21,15 +21,19 @@ public class Principal {
 
 		System.out.println("Introduce hasta que numero coge un valor aleatorio");
 		hasta=teclado.nextInt();
-		vector=new Vector2(mo,desde,hasta);
+		v1=new Vector(mo,desde,hasta);
+		v2=new Vector(mo,desde,hasta);
+		v3=v1.suma2vectores(v2);
 		System.out.println("Valores generados en los Arrays:");
 		System.out.println();
-		vector.imprime1Vector();
-		vector.imprime2Vector();
+		System.out.println("Vector 1:");
+		v1.imprimeVector();
+		System.out.println();
+		System.out.println("Vector 2:");
+		v2.imprimeVector();
 		System.out.println();
 		System.out.println("Suma de los valores sin ordenar");
-		vector.Sumar();
-		vector.imprime3Vector();
+		v3.imprimeVector();
 		System.out.println();
 		System.out.println("Suma de los valores ordenado");
 		
