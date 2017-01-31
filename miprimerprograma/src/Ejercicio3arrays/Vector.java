@@ -27,21 +27,25 @@ public class Vector {
 	}
 	
 
-	public void busqueda(){
+	public void Buscar(){
+		
+		int mayor = v[0], menor = v[0];
 		for(int i=0;i<(v.length-1);i++){
-			for(int j=i+1;j<v.length;j++){
-				if(v[i]>v[j]){
-				//Intercambiamos valores
-					int variableauxiliar=v[i];
-					System.out.print(variableauxiliar);
+			
+				if(v[i] > mayor){
+				
+					mayor= v[i];
+					
 			}
-				else if(v[i]<v[j]){
-					int variableauxiliar1=v[i];
-					System.out.print(variableauxiliar1);
+				if(v[i] < menor){
+					menor= v[i];
+					
 				}
 				
 		}
-	}
+			System.out.println("El mayor del vector es: " + mayor + " en la posicion " );
+			System.out.println("El menor del vector es: " + menor + " en la posicion " );
+	
 }
 	
 	

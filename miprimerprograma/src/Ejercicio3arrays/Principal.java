@@ -2,7 +2,7 @@ package Ejercicio3arrays;
 
 import java.util.Scanner;
 
-import Ejercicio2arrays.Vector;
+
 
 public class Principal {
 
@@ -26,7 +26,7 @@ public class Principal {
 		System.out.println();
 		System.out.println("Vector 1:");
 		v1.imprimeVector();
-		v1.busqueda;
+		v1.Buscar();
 		
 		
 	}
