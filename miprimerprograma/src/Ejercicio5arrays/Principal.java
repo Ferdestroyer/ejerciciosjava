@@ -9,7 +9,7 @@ public class Principal {
 		int desde, hasta;
 		Vector v1, v2, comparar;
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("DOBLE ARRAY MAGICO DE NUMEROS CON LA SUMA DE UN TERCERO");
+		System.out.println("DOBLE ARRAY MAGICO DE NUMEROS que comprobara para cada uno de los elementos  del primer vector cuántas veces está en el segundo");
 		System.out.println();
 		System.out.println();
 		
