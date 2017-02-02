@@ -42,6 +42,19 @@ public class Matriz {
 	
 }
 	
+	public void Sumar(){
+		int k=0;
+		int l=0;
+		for (int i=0; i<10; i++){ 
+
+			for(int j=0; j<l;j++){ 
+			k=k+m[i][j]; 
+			System.out.println("la suma de la columna "+j+" es: "+k); 
+			} 
+
+		} 
+			
+	}
 	
 	public void imprimeMatriz(){
 		System.out.println();
