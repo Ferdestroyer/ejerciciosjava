@@ -21,10 +21,10 @@ public class Matriz {
 	}
 	
 	public void Intercambiar(int fila1, int fila2){
-		for (int i = 0; i <= 5; i++) {
-			int aux = m[fila1][i];
-			m[fila1][i] = m[fila2][i];
-			m[fila1][i] = aux;
+		for (int i = 0; i <= 4; i++) {
+			int aux = m[fila1 -1][i];
+			m[fila1 -1][i] = m[fila2 -1][i];
+			m[fila2 -1][i] = aux;
 		}
 	}
 
