@@ -6,16 +6,16 @@ public class Matriz {
 	
 		
 	public  Matriz(){
-		m=new int [10][11];
+		m=new int [10][10];
 	}
 	
 		
 	public Matriz(int desde, int hasta){
 		
-		m=new int [10][11];
+		m=new int [10][10];
 		for (int i=0; i<10; i++) {
-			m[i][0]=i+1;
-			for (int k=1; k<11; k++) {
+			//m[i][0]=i+1;
+			for (int k=0; k<10; k++) {
 			m[i][k]=(int) (Math.random()*(hasta-desde+1)+desde);
 			}
 		}
@@ -29,18 +29,31 @@ public class Matriz {
 		}
 	}
 	*/
-	public void Media(int alumno){
-		for (int i=0; i<10; i++) {
-			
-		for (int k=1; k<11; k++) {
+
+	public void Buscarasig(int asignatura){
+		int p[];
+		p=new int [10];
 		
-		}	
+			for (int k=0; k<10; k++) {
+				int i=asignatura-1;
+				System.out.printf(" %4d",m[i][k]);
+			}
 			
+		}
+	
+	public void Buscaral(int alumno){
+		int q[];
+		q=new int [10];
+		
+			for (int k=0; k<10; k++) {
+				int i=alumno-1;
+				System.out.printf(" %4d",m[k][i]);
+			}
 			
 		}
 		
 		
-	}
+		
 	
 	
 	public void imprimeMatriz(){
