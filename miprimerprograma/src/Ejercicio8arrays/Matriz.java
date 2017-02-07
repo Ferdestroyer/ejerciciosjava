@@ -38,6 +38,7 @@ public class Matriz {
 		float mediasig;
 			for (int k=0; k<10; k++) {
 				int i=asignatura-1;
+				//guardo las notas de la asignatura en un array para luego calcular la media
 				p[k]=m[i][k];
 				totalsig=totalsig+p[k];
 				System.out.printf(" %4d",m[i][k]);
@@ -56,6 +57,7 @@ public class Matriz {
 		float medialum;
 			for (int k=0; k<10; k++) {
 				int i=alumno-1;
+				//guardo las notas del alumno en un array para luego calcular la media
 				q[k]=m[k][i];
 				totalalum=totalalum+q[k];
 				System.out.printf(" %4d",m[k][i]);
