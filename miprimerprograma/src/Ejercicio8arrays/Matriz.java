@@ -33,23 +33,37 @@ public class Matriz {
 	public void Buscarasig(int asignatura){
 		int p[];
 		p=new int [10];
-		
+		int totalsig;
+		totalsig=0;
+		float mediasig;
 			for (int k=0; k<10; k++) {
 				int i=asignatura-1;
+				p[k]=m[i][k];
+				totalsig=totalsig+p[k];
 				System.out.printf(" %4d",m[i][k]);
 			}
-			
+			mediasig=(float)totalsig/10;
+			System.out.println();
+			System.out.println();
+			System.out.println("Media de la asignatura "+asignatura+" : "+mediasig);
 		}
 	
 	public void Buscaral(int alumno){
 		int q[];
 		q=new int [10];
-		
+		int totalalum;
+		totalalum=0;
+		float medialum;
 			for (int k=0; k<10; k++) {
 				int i=alumno-1;
+				q[k]=m[k][i];
+				totalalum=totalalum+q[k];
 				System.out.printf(" %4d",m[k][i]);
 			}
-			
+			medialum=(float)totalalum/10;
+			System.out.println();
+			System.out.println();
+			System.out.println("Media del alumno "+alumno+" : "+medialum);
 		}
 		
 		
