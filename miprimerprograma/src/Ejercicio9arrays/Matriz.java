@@ -12,18 +12,33 @@ public class Matriz {
 		
 
     public void Aleatorio(){
-    	
-		for (int k=0; k<10; k++) {
-			int i=asignatura-1;
-			//guardo las notas de la asignatura en un array para luego calcular la media
-			p[k]=m[i][k];
-			totalsig=totalsig+p[k];
-			System.out.printf(" %4d",m[i][k]);
-		}
-    	
-    	
+    	 String aleatorio;
+    	 aleatorio="";
+    	 String palo;
+    	 palo="";
+		 for (int i = 0; i < m.length; i++) {
+			 if (i==0){
+				palo="oros"; 
+			 }
+			 
+			 else if (i==1){
+				palo="copas"; 
+			 }
+			 
+			 else if (i==2){
+				 palo="espadas";  
+			 }
+			 
+			 else if (i==3){
+				 palo="bastos"; 
+			 }
+			 
+			 for (int j = 0; j < m[0].length; j++) { 
+				 aleatorio=m[i][j];
+				 
+		}	
+      }
     }
-	
 		
 		
 	
