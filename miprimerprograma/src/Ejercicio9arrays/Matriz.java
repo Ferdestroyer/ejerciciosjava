@@ -36,7 +36,7 @@ public class Matriz {
 			 }
 			 
 			 
-			 for (int j = 0; j < 9; j++) { 
+			 for (int j = 0; j < 10; j++) { 
 				 aleatorio=m[i][j];
 				 System.out.println("Ha salido el "+aleatorio+" de " +palo);
 				 
@@ -46,18 +46,6 @@ public class Matriz {
 		 
     }
 		
-		
-	
-	
-	public void imprimeMatriz(){
-		System.out.println();
-		 for (int i = 0; i < m.length; i++) {  
-			 for (int j = 0; j < m[0].length; j++) {  
-			 System.out.printf(" %4d",m[i][j]);  
-			}  
-			  System.out.println("");  
-		}  
-	}
 	
 	
 }
