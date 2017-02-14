@@ -39,8 +39,34 @@ public class Matriz {
 			 for (int j = 0; j < 10; j++) { 
 				 aleatorio=m[i][j];
 				 System.out.println("Ha salido el "+aleatorio+" de " +palo);
+
+			 }	
+			 int sorteoi,sorteoj;
+			 for (int k= 0; k < 10; k++){
 				 
-		}	
+				 sorteoi=(int) (Math.random()*4);
+
+				 sorteoj=(int) (Math.random()*10);
+				 if (sorteoi==0){
+					 palo="oros"; 
+				 }
+
+				 else if (sorteoi==1){
+					 palo="copas"; 
+				 }
+
+				 else if (sorteoi==2){
+					 palo="espadas";  
+				 }
+
+				 else if (sorteoi==3){
+					 palo="bastos"; 
+				 }
+				 System.out.println("ha salido "+m[sorteoi][sorteoj]+" de " +palo);
+
+				 
+			 }	 
+			 }
 			 
       }
 		 
@@ -48,5 +74,5 @@ public class Matriz {
 		
 	
 	
-}
+
 
