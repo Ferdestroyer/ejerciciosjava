@@ -1,4 +1,4 @@
-package codigoprincipal;
+package ejerciciohoja1;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

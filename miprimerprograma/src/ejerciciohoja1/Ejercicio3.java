@@ -1,4 +1,4 @@
-package codigoprincipal;
+package ejerciciohoja1;
 
 public class Ejercicio3 {
 
