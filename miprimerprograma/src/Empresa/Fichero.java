@@ -61,7 +61,7 @@ public class Fichero {
 	        	// System.out.println(linea);
 	        	 pos=-1;
 	        	 cont=1;
-	        	 do{
+	        	 
 	        		 pos++;
 	        		 desde=pos;
 	        		 pos=linea.indexOf(separador,pos);
@@ -130,7 +130,7 @@ public class Fichero {
             
             for (int i = 0; i < cont; i++){
             	
-               linea=col.getDisco(i).escribeFichero(separador);
+               linea=col.getTrabajador(i).escribeFichero(separador);
                //pw.write(linea,0,linea.length());
            		pw.write(linea);
             	pw.write("\r\n");

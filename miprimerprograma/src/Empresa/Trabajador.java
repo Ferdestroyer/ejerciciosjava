@@ -34,14 +34,14 @@ public class Trabajador {
 	public Trabajador mostrartrabajador(){
 		Scanner teclado = new Scanner (System.in);
 		Trabajador trabajador;
-		System.out.println("Introduce el codigo del empleado: ");
-		int identificador = teclado.nextInt();
+		int identificador = 0;
+		identificador++;
 		System.out.println("Introduce el nombre: ");
-		String nombre = teclado.nextLine();
+		String nombre = teclado.next();
 		System.out.println("Introduce el estado civil (): ");
-		String estadocivil = teclado.nextLine();
+		String estadocivil = teclado.next();
 		System.out.println("Introduce el turno de trabajo: ");
-		String turno = teclado.nextLine();
+		String turno = teclado.next();
 		System.out.println("Introduce la titulacion: ");
 		int titulacion = teclado.nextInt();
 		System.out.println("Introduce los años: ");
