@@ -1,11 +1,11 @@
-package ejerciciosherencia;
+package herenciabueno;
 
 import java.util.Scanner;
 
 
 public class Plantilla {
 	
-	private Empleado [] plantilla;
+	private Empleados [] plantilla;
 
 
 	private int indice=0;
@@ -13,7 +13,7 @@ public class Plantilla {
 
 	public Plantilla() {
 
-		plantilla=new Empleado[100];
+		plantilla=new Empleados[100];
 
 	}
 
@@ -21,7 +21,7 @@ public class Plantilla {
 		return indice;
 	}	
 	
-	public Empleado getEmpleado(int posicion){
+	public Empleados getEmpleado(int posicion){
 		return plantilla[posicion];
 	}
 
@@ -30,8 +30,12 @@ public class Plantilla {
 		this.indice = indice;
 	}
 
-	public void añadirempleado(Empleado empleado){
+	public void añadirempleado(Empleados empleado){
 		plantilla[indice]=empleado;
+		indice++;
+	}
+	public void añadirjefe(Jefe jefe){
+		plantilla[indice]=jefe;
 		indice++;
 	}
 	public void borrarempleado(int indice){
@@ -49,10 +53,18 @@ public class Plantilla {
 			System.out.println();
 		}
 	}
+		public void imprimirjefe(){
+			for(int i=0;i<indice;i++){
+				System.out.print("Empleado " + (i+1));
+				plantilla[i].imprimir();
+				System.out.println();
+			}
+	}
 	
 
 	public void menu(){
-		Empleado empleado = new Empleado();
+		Empleados empleado = new Empleados();
+		Jefe jefe = new Jefe();
 
 		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner (System.in);
@@ -69,12 +81,33 @@ public class Plantilla {
 			menu=teclado.nextInt();
 			
 			if (menu==1){
-				System.out.println("¿Cuantos empleados quieres añadir?");
-				int nempleados = teclado.nextInt();
-				for (int i=0;i<nempleados;i++){
-					Empleado empleado1 = empleado.mostrarempleado();
-					añadirempleado(empleado1);
+				System.out.println("¿EMPLEADO o JEFE?");
+				String identificador=teclado.next();
+				if (identificador.equalsIgnoreCase("EMPLEADO")){
+					System.out.println("¿Cuantos empleados quieres añadir?");
+					int nempleados = teclado.nextInt();
+					for (int i=0;i<nempleados;i++){
+						Empleados empleado1 = empleado.crearempleado();
+						añadirempleado(empleado1);
+					}
+				}		
+
+				else if (identificador.equalsIgnoreCase("JEFE")){
+					System.out.println("¿Cuantos jefes quieres añadir?");
+					int nempleados = teclado.nextInt();
+					for (int i=0;i<nempleados;i++){
+						Jefe jefe1 = jefe.crearjefe();
+						añadirempleado(jefe1);
+
+					}
 				}
+
+				else{
+					System.out.println("Error, no has introducido empleado o jefe");
+				}
+
+				
+				
 			}
 			if (menu==2){
 				System.out.println("¿Cuantos empleados quieres borrar?");
