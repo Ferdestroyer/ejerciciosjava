@@ -34,8 +34,8 @@ public class Plantilla {
 		plantilla[indice]=empleado;
 		indice++;
 	}
-	public void añadirjefe(Jefe jefe){
-		plantilla[indice]=jefe;
+	public void añadirempleado(Jefe empleado){
+		plantilla[indice]=empleado;
 		indice++;
 	}
 	public void borrarempleado(int indice){
@@ -53,13 +53,8 @@ public class Plantilla {
 			System.out.println();
 		}
 	}
-		public void imprimirjefe(){
-			for(int i=0;i<indice;i++){
-				System.out.print("Empleado " + (i+1));
-				plantilla[i].imprimir();
-				System.out.println();
-			}
-	}
+
+
 	
 
 	public void menu(){
@@ -96,7 +91,7 @@ public class Plantilla {
 					System.out.println("¿Cuantos jefes quieres añadir?");
 					int nempleados = teclado.nextInt();
 					for (int i=0;i<nempleados;i++){
-						Jefe jefe1 = jefe.crearjefe();
+						Jefe jefe1 = jefe.crearempleado();
 						añadirempleado(jefe1);
 
 					}

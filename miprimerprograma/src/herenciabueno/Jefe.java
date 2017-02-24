@@ -18,7 +18,7 @@ titulo="";
 nombredep="";
 }
 
-public Jefe crearjefe(){
+public Jefe crearempleado(){
 	Jefe jefe;
 	Scanner teclado = new Scanner (System.in);
 	System.out.println("Introduce el nombre: ");
@@ -56,8 +56,12 @@ public void setNombredep(String nombredep) {
 	this.nombredep = nombredep;
 }
 
-public void imprimirjefe(){
+public void imprimir(){
 	
+	System.out.print(" Nombre " + getNombre());
+	
+	System.out.print(" sueldo: " + getSueldo());
+		
 	System.out.print(" titulo " + titulo);
 	
 	System.out.print(" nombre departamento: " + nombredep);
