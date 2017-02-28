@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Empleados {
 
 
-private String nombre;
-private int sueldo;
+protected String nombre;
+protected int sueldo;
 
 public Empleados() {
 	nombre="";
@@ -39,9 +39,9 @@ public void setSueldo(int sueldo) {
 public void crearempleado(){
 	Scanner teclado = new Scanner (System.in);
 	System.out.println("Introduce el nombre: ");
-	String nombre = teclado.next();
+	this.nombre = teclado.next();
 	System.out.println("Introduce el sueldo : ");
-	int sueldo = teclado.nextInt();
+	this.sueldo = teclado.nextInt();
 }
 
 public void imprimir(){

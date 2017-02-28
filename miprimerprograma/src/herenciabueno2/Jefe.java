@@ -22,13 +22,13 @@ public void crearempleado(){
 
 	Scanner teclado = new Scanner (System.in);
 	System.out.println("Introduce el nombre: ");
-	String nombre = teclado.next();
+	this.nombre = teclado.next();
 	System.out.println("Introduce el sueldo : ");
-	int sueldo = teclado.nextInt();
+	this.sueldo = teclado.nextInt();
 	System.out.println("Introduce el titulo: ");
-	String titulo = teclado.next();
+	this.titulo = teclado.next();
 	System.out.println("Introduce el nombre del departamento : ");
-	String nombredep = teclado.next();
+	this.nombredep = teclado.next();
 
 }
 

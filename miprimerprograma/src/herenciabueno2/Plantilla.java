@@ -2,6 +2,9 @@ package herenciabueno2;
 
 import java.util.Scanner;
 
+import herenciabueno.Empleados;
+import herenciabueno.Jefe;
+
 
 public class Plantilla {
 	
@@ -82,9 +85,7 @@ public class Plantilla {
 					System.out.println("¿Cuantos empleados quieres añadir?");
 					int nempleados = teclado.nextInt();
 					for (int i=0;i<nempleados;i++){
-						Empleados empleado1 = new Empleados();
-						empleado1.setNombre(nombre);
-						empleado1.setSueldo(sueldo);
+						Empleados empleado1 = empleado.crearempleado();
 						añadirempleado(empleado1);
 					}
 				}		
