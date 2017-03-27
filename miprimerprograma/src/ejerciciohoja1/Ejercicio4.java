@@ -1,10 +1,13 @@
 package ejerciciohoja1;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio4 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
+		try{
 		float a = 0;
 		float b = 0;
 		float c = 0;
@@ -40,6 +43,12 @@ public class Ejercicio4 {
 	    				System.out.println ("el numero mayor es "+c);
 	    			}
 	    	   }
+		
+		catch(InputMismatchException e){
+			System.out.println ("error, no has escrito un numero");
+			System.exit(0);
+		}
+	}
 	}
 	    	   
 	    	   

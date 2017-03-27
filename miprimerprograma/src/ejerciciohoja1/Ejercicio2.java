@@ -1,10 +1,13 @@
 package ejerciciohoja1;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
+		try{
 		float a = 0;
 		float b = 0;
 	    float suma=a+b;
@@ -39,7 +42,11 @@ public class Ejercicio2 {
 		System.out.println("la resta es " +resta);
 		System.out.println("la multiplicacion es " +multi);
 		System.out.println("la division es " +div);
-
+		}
+		catch(InputMismatchException e){
+			 System.out.println ("Error, no has introducido un numero");
+			 System.exit(0);
+		}
 	}
 
 }
